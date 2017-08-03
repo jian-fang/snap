@@ -183,6 +183,7 @@ set create_interconect FALSE
 set create_bram        FALSE
 set create_ddr3        FALSE
 set create_ddr4        FALSE
+set create_ddr4_nsa    FALSE
 
 if { $fpga_card == "KU3" } {
   if { $bram_used == "TRUE" } {
