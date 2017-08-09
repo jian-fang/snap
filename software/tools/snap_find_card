@@ -142,9 +142,12 @@ while getopts ":A:C:Vvh" opt; do
 		if [ $? != 0 ]; then
 			detect_card_name $card  "0x0632" "0x060a" "FGT"
 			if [ $? != 0 ]; then
-				detect_card_name $card  "0x0602" "" "GZIP"
+				detect_card_name $card  "0x0632" "0x0607" "NSA121B"
 				if [ $? != 0 ]; then
-					exit 1  # No accel fond fond Card
+					detect_card_name $card  "0x0602" "" "GZIP"
+					if [ $? != 0 ]; then
+						exit 1  # No accel fond fond Card
+					fi
 				fi
 			fi
 		fi

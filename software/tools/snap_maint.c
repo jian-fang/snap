@@ -170,6 +170,7 @@ static void snap_version(void *handle)
         switch (ioctl_data) {
                 case 0: VERBOSE1("KU3"); break;
                 case 1: VERBOSE1("FGT"); break;
+                case 2: VERBOSE1("NSA121B"); break;
                 default: VERBOSE1("Unknown"); break;
         }
         VERBOSE1(" Card, NVME ");

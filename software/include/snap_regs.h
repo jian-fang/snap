@@ -110,6 +110,7 @@ extern "C" {
  *   15..9  RO: Reserved
  *       8  RO: NVMe enabled
  *    7..0  RO: Card type:
+ *              0x02 : NSA121B
  *              0x01 : FGT
  *              0x00 : KU3
  */
